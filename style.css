@@ -1,0 +1,128 @@
+:root{
+    --bgMobile:url("otherImg/650x1115.jpg");  /* BODY BACKGROUND*/
+    --rgbaBg:rgba(red, green, blue, alpha);  /* HEADER SECTION FOOTER SHARE BAACKGROUND COLOR*/
+    --cardColor:rgb(12, 215, 148); /* color card Item*/
+    --LinkColor: aliceblue; /*Icon place youtube stechfab pinterest*/
+}
+body{
+    background-image:var(--bgMobile);
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    margin: 0% ;
+    padding: 0%;
+    box-sizing: border-box; 
+    display: grid;
+    grid-template-columns: auto;
+    font-family:sans-serif,verdana,serif;
+}
+.headr{
+    background-color:var(--rgbaBg);
+    min-width: 100%;
+    max-width: 100%;
+}
+.headr video{
+    min-width: inherit;
+    max-width: inherit;
+}
+.headr .titulo{
+    font-size:10ch;
+    color: var(--cardColor);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+/*here image edit*/
+.Cont{
+    background-color:var(--rgbaBg);
+    border-style: solid;
+    border-color:var(--cardColor);
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.Cont img{
+    display: inherit;
+    border-style: inherit;
+    border-color:inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 60%;
+}
+.info{
+    background-color: rgb(1, 96, 96);;
+    border-style: solid;
+    border-color: var(--cardColor);
+}
+.info h2,h3{
+    background-color:var(--cardColor);
+    text-align: center;
+}
+/* here iconpng platform */
+.Cont .LineA{
+    padding: 6PX ;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10PX;
+}
+.Cont .LineA a{
+    font-size: 20px;
+}
+.Cont .LineA {
+    background-color:var(--LinkColor);
+}
+a .IconPng{
+    width: 60px;
+    height: 60px;
+}
+.LineA .IconPng:hover{
+    transform: scale(2.0,2.0);
+    transition: 0.5s;
+}    /* here iconpng platform end */
+.sect{ /*here  grid container*/
+    background-color:var(--rgbaBg);
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px ;
+    align-items: center;
+    height: auto;
+}  /*here  grid container*/
+.foot {
+    background-color:var(--rgbaBg);
+    color:var(--LinkColor);
+    border-style: solid;
+    border-color:var(--cardColor) ;
+    text-align: center;
+    margin-bottom: 10px;
+    min-height: 50%;
+    max-height: 250px;
+}
+.ext{
+    font-size: 100%;
+    padding-left: 20px;
+    color: inherit;
+}
+.ext:hover{
+    color:var(--cardColor);
+}
+/*media table*/
+@media only screen and (max-width: 600px) {
+    .sect{
+        background-image: var(--bgMobile);
+        grid-template-columns: auto auto;
+    }
+    .titulo{
+        display: none;
+    }
+  }
+/*media Mobile*/
+@media only screen and (max-width: 480px) {
+    .sect{
+        grid-template-columns: auto ;
+    }
+    .titulo{
+        display: none;
+    }
+  }
