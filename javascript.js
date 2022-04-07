@@ -1,5 +1,6 @@
-var arrVd=["02.mp4","teclado.mp4","01.mp4"];
+import { Item } from "./Reutilizar.js";
 
+var arrVd=["02.mp4","teclado.mp4","01.mp4"];
 const show=()=>{
     var vd=document.getElementById("vdoRand")
     var hm5=document.getElementById("htmlid")
@@ -9,6 +10,7 @@ const show=()=>{
         vd.play();
     })
 
+    Item();
+   
 }
-
 window.addEventListener("load",show)

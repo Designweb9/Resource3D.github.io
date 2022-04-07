@@ -35,8 +35,8 @@ body{
 /*here image edit*/
 .Cont{
     background-color:var(--rgbaBg);
-    border-style: solid;
     border-color:var(--cardColor);
+    border-style: solid;
     display: block;
     width: 100%;
     height: auto;
@@ -88,7 +88,15 @@ a .IconPng{
     gap: 10px ;
     align-items: center;
     height: auto;
-}  /*here  grid container*/
+}
+.box{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
+
+
+/*here  grid container*/
 .foot {
     background-color:var(--rgbaBg);
     color:var(--LinkColor);
